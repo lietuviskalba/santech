@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import content from "./data/content.json"; // Importing our "database"
+import contactinfo from "./data/contactinfo.json"; // Importing our "database"
 import Intro from "./components/Intro";
+import Contact from "./components/Contact";
 
 function App() {
   // 1. State to keep track of current language. Default is 'lt' (Lithuanian)
@@ -8,6 +10,7 @@ function App() {
 
   // 2. Get the content for the current language
   const t = content[language];
+  const n = contactinfo;
 
   return (
     <div>
@@ -28,6 +31,7 @@ function App() {
 
       {/* 3. Render the Intro, passing the specific text data */}
       <Intro data={t.intro} />
+      <Contact data={n.phone} />
     </div>
   );
 }

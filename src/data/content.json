@@ -1,0 +1,23 @@
+{
+  "en": {
+    "intro": {
+      "title": "Professional Plumbing Services",
+      "subtitle": "Reliable. Quick. Experienced.",
+      "button": "Contact Us"
+    }
+  },
+  "lt": {
+    "intro": {
+      "title": "Profesionalios Santechnikos Paslaugos",
+      "subtitle": "Patikima. Greita. Patyrę meistrai.",
+      "button": "Susisiekti"
+    }
+  },
+  "ru": {
+    "intro": {
+      "title": "Профессиональные Сантехнические Услуги",
+      "subtitle": "Надежно. Быстро. Опытные мастера.",
+      "button": "Связаться"
+    }
+  }
+}

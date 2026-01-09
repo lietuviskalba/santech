@@ -1,11 +1,33 @@
-// src/App.jsx
-import React from "react";
+import React, { useState } from "react";
+import content from "./data/content.json"; // Importing our "database"
+import Intro from "./components/Intro";
 
 function App() {
+  // 1. State to keep track of current language. Default is 'lt' (Lithuanian)
+  const [language, setLanguage] = useState("lt");
+
+  // 2. Get the content for the current language
+  const t = content[language];
+
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1>Santechnikos test page</h1>
-      <p>System check: React is running.</p>
+    <div>
+      {/* Temporary Language Switcher for testing */}
+      <div
+        style={{
+          position: "fixed",
+          top: 10,
+          right: 10,
+          background: "white",
+          padding: 5,
+        }}
+      >
+        <button onClick={() => setLanguage("lt")}>LT</button>
+        <button onClick={() => setLanguage("en")}>EN</button>
+        <button onClick={() => setLanguage("ru")}>RU</button>
+      </div>
+
+      {/* 3. Render the Intro, passing the specific text data */}
+      <Intro data={t.intro} />
     </div>
   );
 }

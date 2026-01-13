@@ -1,23 +1,59 @@
 {
   "en": {
+    "navbar": {
+      "home": "Home",
+      "contact": "Contact",
+      "services": "Services",
+      "experience": "Gallery"
+    },
     "intro": {
       "title": "Professional Plumbing Services",
       "subtitle": "Reliable. Quick. Experienced.",
       "button": "Contact Us"
+    },
+    "contactSection": {
+      "title": "Get in Touch",
+      "areaTitle": "Service Area",
+      "areaText": "Serving Vilnius and surrounding districts (up to 40km)",
+      "phoneLabel": "Call us:"
     }
   },
   "lt": {
+    "navbar": {
+      "home": "Pradžia",
+      "contact": "Kontaktai",
+      "services": "Paslaugos",
+      "experience": "Galerija"
+    },
     "intro": {
       "title": "Profesionalios Santechnikos Paslaugos",
       "subtitle": "Patikima. Greita. Patyrę meistrai.",
       "button": "Susisiekti"
+    },
+    "contactSection": {
+      "title": "Susisiekite",
+      "areaTitle": "Darbo Zona",
+      "areaText": "Dirbame Vilniuje ir aplinkiniuose rajonuose (iki 40km)",
+      "phoneLabel": "Skambinti:"
     }
   },
   "ru": {
+    "navbar": {
+      "home": "Главная",
+      "contact": "Контакты",
+      "services": "Услуги",
+      "experience": "Галерея"
+    },
     "intro": {
       "title": "Профессиональные Сантехнические Услуги",
       "subtitle": "Надежно. Быстро. Опытные мастера.",
       "button": "Связаться"
+    },
+    "contactSection": {
+      "title": "Свяжитесь с нами",
+      "areaTitle": "Зона обслуживания",
+      "areaText": "Работаем в Вильнюсе и пригородах (до 40км)",
+      "phoneLabel": "Звоните:"
     }
   }
 }

@@ -1,37 +1,38 @@
 import React, { useState } from "react";
-import content from "./data/content.json"; // Importing our "database"
-import contactinfo from "./data/contactinfo.json"; // Importing our "database"
+import content from "./data/content.json";
+import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Contact from "./components/Contact";
 
 function App() {
-  // 1. State to keep track of current language. Default is 'lt' (Lithuanian)
   const [language, setLanguage] = useState("lt");
-
-  // 2. Get the content for the current language
   const t = content[language];
-  const n = contactinfo;
 
   return (
-    <div>
-      {/* Temporary Language Switcher for testing */}
-      <div
-        style={{
-          position: "fixed",
-          top: 10,
-          right: 10,
-          background: "white",
-          padding: 5,
-        }}
-      >
-        <button onClick={() => setLanguage("lt")}>LT</button>
-        <button onClick={() => setLanguage("en")}>EN</button>
-        <button onClick={() => setLanguage("ru")}>RU</button>
+    // "scrollBehavior: smooth" makes the jump between sections animate nicely
+    <div style={{ fontFamily: "Arial, sans-serif", scrollBehavior: "smooth" }}>
+      {/* 1. Navbar: We pass the language text AND the switcher function */}
+      <Navbar
+        data={t.navbar}
+        setLanguage={setLanguage}
+        currentLanguage={language}
+      />
+
+      {/* 2. Intro Section with ID="home" so the navbar link works */}
+      <div id="home">
+        <Intro data={t.intro} />
       </div>
 
-      {/* 3. Render the Intro, passing the specific text data */}
-      <Intro data={t.intro} />
-      <Contact data={n.phone} />
+      {/* 3. Contact Section */}
+      <Contact data={t.contactSection} />
+
+      {/* Placeholders for future sections so links don't break */}
+      <div id="services" style={{ height: "300px", padding: "20px" }}>
+        Services Section (Coming Soon)
+      </div>
+      <div id="experience" style={{ height: "300px", padding: "20px" }}>
+        Experience Section (Coming Soon)
+      </div>
     </div>
   );
 }

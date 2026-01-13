@@ -40,7 +40,7 @@ function App() {
           color: "white",
         }}
       >
-        &copy; 2024 Santech. Vilnius.
+        &copy; 2026 Santech. Vilnius.
       </footer>
     </div>
   );

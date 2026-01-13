@@ -7,7 +7,7 @@ const Navbar = ({ data, setLanguage, currentLanguage }) => {
     justifyContent: "space-between",
     alignItems: "center",
     padding: "1rem 2rem",
-    backgroundColor: "#4a148c", // Dark purple
+    backgroundColor: "var(--primary-color)",
     color: "white",
     position: "sticky", // Sticks to top when scrolling
     top: 0,
@@ -27,7 +27,8 @@ const Navbar = ({ data, setLanguage, currentLanguage }) => {
     padding: "5px 10px",
     marginLeft: "5px",
     cursor: "pointer",
-    backgroundColor: currentLanguage === lang ? "#ab47bc" : "transparent",
+    backgroundColor:
+      currentLanguage === lang ? "var(--secondary-color)" : "transparent",
     color: "white",
     border: "1px solid white",
     borderRadius: "4px",

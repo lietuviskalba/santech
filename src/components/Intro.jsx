@@ -7,8 +7,8 @@ const Intro = ({ data }) => {
       style={{
         padding: "50px 20px",
         textAlign: "center",
-        backgroundColor: "#f3e5f5", // Light purple background
-        color: "#4a148c", // Dark purple text
+        backgroundColor: "var(--bg-light)",
+        color: "var(--primary-color)",
       }}
     >
       <h1>{data.title}</h1>
@@ -18,8 +18,8 @@ const Intro = ({ data }) => {
           marginTop: "20px",
           padding: "10px 20px",
           fontSize: "1rem",
-          backgroundColor: "#7b1fa2",
-          color: "white",
+          backgroundColor: "var(--secondary-color)",
+          color: "var(--white)",
           border: "none",
           borderRadius: "5px",
           cursor: "pointer",

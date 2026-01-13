@@ -3,8 +3,9 @@ import content from "./data/content.json";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Contact from "./components/Contact";
-import Services from "./components/Services"; // New
-import Gallery from "./components/Gallery"; // New
+import Services from "./components/Services";
+import Gallery from "./components/Gallery";
+import FAQ from "./components/FAQ";
 
 function App() {
   const [language, setLanguage] = useState("lt");
@@ -29,7 +30,8 @@ function App() {
 
       <Gallery data={t.gallery} />
 
-      {/* Simple Footer */}
+      <FAQ data={t.faq} />
+
       <footer
         style={{
           padding: "20px",
@@ -38,7 +40,7 @@ function App() {
           color: "white",
         }}
       >
-        &copy; 2026 Santech. Vilnius.
+        &copy; 2024 Santech. Vilnius.
       </footer>
     </div>
   );

@@ -31,6 +31,23 @@
     },
     "gallery": {
       "title": "Our Work"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Do you offer free estimates?",
+          "a": "Yes, we can provide a preliminary estimate over the phone, but exact prices are given upon inspection."
+        },
+        {
+          "q": "Do you work on weekends?",
+          "a": "Yes, we are available on Saturdays for standard work and Sundays for emergencies."
+        },
+        {
+          "q": "Do I need to buy the materials?",
+          "a": "We can buy the materials for you and provide the receipt, or you can purchase them yourself."
+        }
+      ]
     }
   },
   "lt": {
@@ -65,6 +82,23 @@
     },
     "gallery": {
       "title": "Atlikti Darbai"
+    },
+    "faq": {
+      "title": "Dažniausiai Užduodami Klausimai",
+      "items": [
+        {
+          "q": "Ar konsultacija nemokama?",
+          "a": "Taip, telefonu galime pasakyti preliminarią kainą, tačiau tiksli kaina nustatoma vietoje."
+        },
+        {
+          "q": "Ar dirbate savaitgaliais?",
+          "a": "Taip, dirbame šeštadieniais įprastu grafiku, o sekmadieniais – skubiais atvejais."
+        },
+        {
+          "q": "Ar man reikia pirkti medžiagas?",
+          "a": "Medžiagas galime nupirkti mes (pateiksime čekį) arba galite nusipirkti patys pagal mūsų sąrašą."
+        }
+      ]
     }
   },
   "ru": {
@@ -99,6 +133,23 @@
     },
     "gallery": {
       "title": "Наши Работы"
+    },
+    "faq": {
+      "title": "Часто задаваемые вопросы",
+      "items": [
+        {
+          "q": "Бесплатна ли консультация?",
+          "a": "Да, по телефону мы можем назвать предварительную цену, но точная цена определяется на месте."
+        },
+        {
+          "q": "Работаете ли вы в выходные?",
+          "a": "Да, в субботу мы работаем в обычном режиме, а в воскресенье — по срочным вызовам."
+        },
+        {
+          "q": "Нужно ли мне покупать материалы?",
+          "a": "Мы можем купить материалы сами (предоставим чек) или вы можете купить их самостоятельно."
+        }
+      ]
     }
   }
 }

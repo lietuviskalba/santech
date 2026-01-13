@@ -16,6 +16,21 @@
       "areaTitle": "Service Area",
       "areaText": "Serving Vilnius and surrounding districts (up to 40km)",
       "phoneLabel": "Call us:"
+    },
+
+    "services": {
+      "title": "Our Services",
+      "list": [
+        "Pipe Installation & Repair",
+        "Boiler Maintenance",
+        "Bathroom Renovation",
+        "Leak Detection",
+        "Radiator Installation",
+        "Emergency Repairs"
+      ]
+    },
+    "gallery": {
+      "title": "Our Work"
     }
   },
   "lt": {
@@ -35,6 +50,21 @@
       "areaTitle": "Darbo Zona",
       "areaText": "Dirbame Vilniuje ir aplinkiniuose rajonuose (iki 40km)",
       "phoneLabel": "Skambinti:"
+    },
+
+    "services": {
+      "title": "Mūsų Paslaugos",
+      "list": [
+        "Vamzdžių montavimas ir remontas",
+        "Boilerių priežiūra",
+        "Vonios kambario renovacija",
+        "Nuotėkio paieška",
+        "Radiatorių montavimas",
+        "Skubus remontas"
+      ]
+    },
+    "gallery": {
+      "title": "Atlikti Darbai"
     }
   },
   "ru": {
@@ -54,6 +84,21 @@
       "areaTitle": "Зона обслуживания",
       "areaText": "Работаем в Вильнюсе и пригородах (до 40км)",
       "phoneLabel": "Звоните:"
+    },
+
+    "services": {
+      "title": "Наши Услуги",
+      "list": [
+        "Монтаж и ремонт труб",
+        "Обслуживание бойлеров",
+        "Ремонт ванных комнат",
+        "Поиск утечек",
+        "Установка радиаторов",
+        "Срочный ремонт"
+      ]
+    },
+    "gallery": {
+      "title": "Наши Работы"
     }
   }
 }

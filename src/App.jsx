@@ -3,36 +3,43 @@ import content from "./data/content.json";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Contact from "./components/Contact";
+import Services from "./components/Services"; // New
+import Gallery from "./components/Gallery"; // New
 
 function App() {
   const [language, setLanguage] = useState("lt");
   const t = content[language];
 
   return (
-    // "scrollBehavior: smooth" makes the jump between sections animate nicely
     <div style={{ fontFamily: "Arial, sans-serif", scrollBehavior: "smooth" }}>
-      {/* 1. Navbar: We pass the language text AND the switcher function */}
       <Navbar
         data={t.navbar}
         setLanguage={setLanguage}
         currentLanguage={language}
       />
 
-      {/* 2. Intro Section with ID="home" so the navbar link works */}
       <div id="home">
         <Intro data={t.intro} />
       </div>
 
-      {/* 3. Contact Section */}
+      {/* Services before Contact usually flows better */}
+      <Services data={t.services} />
+
       <Contact data={t.contactSection} />
 
-      {/* Placeholders for future sections so links don't break */}
-      <div id="services" style={{ height: "300px", padding: "20px" }}>
-        Services Section (Coming Soon)
-      </div>
-      <div id="experience" style={{ height: "300px", padding: "20px" }}>
-        Experience Section (Coming Soon)
-      </div>
+      <Gallery data={t.gallery} />
+
+      {/* Simple Footer */}
+      <footer
+        style={{
+          padding: "20px",
+          textAlign: "center",
+          background: "#333",
+          color: "white",
+        }}
+      >
+        &copy; 2026 Santech. Vilnius.
+      </footer>
     </div>
   );
 }
